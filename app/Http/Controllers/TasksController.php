@@ -121,7 +121,7 @@ class TasksController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    // deleteでmessages/（任意のid）にアクセスされた場合の「削除処理」
+    // deleteでtasks/（任意のid）にアクセスされた場合の「削除処理」
     public function destroy($id)
     {
         //idの値でメッセージを検索して取得
