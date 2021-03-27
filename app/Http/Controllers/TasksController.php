@@ -93,11 +93,6 @@ class TasksController extends Controller
     // getでtasks/（任意のid）/editにアクセスされた場合の「更新画面表示処理」
     public function edit($id)
     {
-        // バリデーション
-        $request->validate([
-            'content' => 'required|max:255',
-        ]);
-        
         //idの値でタスクを検索して取得
         $task = Task::findOrFail($id);
 
